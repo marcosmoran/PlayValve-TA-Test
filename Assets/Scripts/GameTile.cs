@@ -22,15 +22,21 @@ public class GameTile : MonoBehaviour
 
     void OnSpawn()
     {
-        _animator.SetTrigger("OnSpawn");
         _tileBG.raycastTarget = true;
+        PlayAnim();
     }
-    void OnClick()
+    public void OnTileClick()
     {
-
+        TileManager.Instance.OnTileClicked(this);
+        Debug.Log("Tile Clicked" + this.name);
     }
     public void SetImage(Sprite img)
     {
         _tileImage.sprite = img;
+    }
+
+    void PlayAnim()
+    {
+        _animator.SetTrigger("OnSpawn");
     }
 }

@@ -11,6 +11,31 @@ public class TileManager : MonoBehaviour
     public List<Sprite> tileSpritesList;
     [SerializeField] GameObject _tilePrefab;
     [SerializeField] Transform _selectedTilesParent;
+
+    public static TileManager Instance { get; private set; }
+
+    void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+    private void Start()
+    {
+        foreach (Transform tileParent in tileParent)
+        {
+            for (int i = 0; i < tileCount; i++)
+            {
+                CreateTile(tileParent);
+            }
+        }
+    }
     void CreateTile(Transform parent)
     {
         GameObject _tileInstance = Instantiate(_tilePrefab, parent);
@@ -18,17 +43,10 @@ public class TileManager : MonoBehaviour
         _gameTileInstance.SetImage(tileSpritesList[UnityEngine.Random.Range(0, tileSpritesList.Count)]);
     }
 
-    private void Start()
+    public void OnTileClicked(GameTile tile)
     {
-        foreach(Transform tileParent in tileParent)
-        {
-            for(int i = 0; i < tileCount; i++)
-            {
-                CreateTile(tileParent);
-            }
-        }
+        tile.transform.parent = _selectedTilesParent;
     }
-
 }
 
 
