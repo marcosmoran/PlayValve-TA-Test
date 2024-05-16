@@ -1,0 +1,128 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Tile_Sprite_Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 1024
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 50
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: iPhone
+      m_MaxTextureSize: 1024
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 50
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 8f89e508a71ca8647a5172d35b9c8d9e, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: d0e90510c0a49034eb9b780ae8f46a91, type: 3}
+  - {fileID: 21300000, guid: c8a6a750cec09a44996a70396e57931a, type: 3}
+  - {fileID: 21300000, guid: 2367c860c4cd63145a14afce949b92df, type: 3}
+  - {fileID: 21300000, guid: 79e6b080760fe544297984e6264d78f9, type: 3}
+  - {fileID: 21300000, guid: 3d17e832427cc94458d2bd65dd8ce51e, type: 3}
+  - {fileID: 21300000, guid: 5da76e32f1a064b4f8f0075cd7c7584c, type: 3}
+  - {fileID: 21300000, guid: 6502b93373f3859449e5e89259b275f1, type: 3}
+  - {fileID: 21300000, guid: 4862de7491d21934a8bf9b9ff1e018ea, type: 3}
+  - {fileID: 21300000, guid: 9860b5e496c0a3e4ab01461c718a32fa, type: 3}
+  - {fileID: 21300000, guid: 2426fab543b18494fa80682fdae29467, type: 3}
+  - {fileID: 21300000, guid: 2fc812260dd8ccb4c9f2ed5723390669, type: 3}
+  - {fileID: 21300000, guid: 689ce79638e85cd478116d9e417e591b, type: 3}
+  - {fileID: 21300000, guid: 04f255d7a181fbf418611b54aaafe66b, type: 3}
+  - {fileID: 21300000, guid: 9d2470e7d0885c040b30415206646572, type: 3}
+  - {fileID: 21300000, guid: 211be2e74e2efde46b9b43d406850954, type: 3}
+  - {fileID: 21300000, guid: a25ad5f7ffedd994fb058ed1c061c451, type: 3}
+  - {fileID: 21300000, guid: 66625bb9f128deb4885a9e3c3a7b4e7a, type: 3}
+  - {fileID: 21300000, guid: 26f06dd9dfa98fa40af15f10b8f84319, type: 3}
+  - {fileID: 21300000, guid: e684ae0bbe687404c8775ed0290b113b, type: 3}
+  - {fileID: 21300000, guid: 9f622f8b0585dff4b978ab790d76575b, type: 3}
+  - {fileID: 21300000, guid: 0f35aaeb6958e164abf999339950dfd4, type: 3}
+  - {fileID: 21300000, guid: 073bae2c7e9ea594994c6692cfe4f517, type: 3}
+  - {fileID: 21300000, guid: ac38369cce56d6c488ee6bf627ee2012, type: 3}
+  - {fileID: 21300000, guid: 8e41201d56892004dae435cf8e41a9a6, type: 3}
+  - {fileID: 21300000, guid: 27fc703d49abdd247b4df977fd104af5, type: 3}
+  - {fileID: 21300000, guid: 5c26792e0de417948a02316649754c1a, type: 3}
+  - {fileID: 21300000, guid: c52d923e7febb7d48afaf40fd3d027ee, type: 3}
+  - {fileID: 21300000, guid: 43882fde18e792d49bb1d64bcd45bf4c, type: 3}
+  - {fileID: 21300000, guid: 8803a1feeca8a7e45894eab4a0c522fa, type: 3}
+  - {fileID: 21300000, guid: 2671affff6413f044ac377a68264e6a8, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - TileSprite_Fruit_6
+  - TileSprite_Fruit_15
+  - TileSprite_Fruit_29
+  - TileSprite_Fruit_13
+  - TileSprite_Fruit_21
+  - TileSprite_Fruit_16
+  - TileSprite_Fruit_19
+  - TileSprite_Fruit_7
+  - TileSprite_Fruit_25
+  - TileSprite_Fruit_28
+  - TileSprite_Fruit_8
+  - TileSprite_Fruit_9
+  - TileSprite_Fruit_26
+  - TileSprite_Fruit_20
+  - TileSprite_Fruit_24
+  - TileSprite_Fruit_27
+  - TileSprite_Fruit_1
+  - TileSprite_Fruit_10
+  - TileSprite_Fruit_5
+  - TileSprite_Fruit_22
+  - TileSprite_Fruit_12
+  - TileSprite_Fruit_11
+  - TileSprite_Fruit_0
+  - TileSprite_Fruit_23
+  - TileSprite_Fruit_4
+  - TileSprite_Fruit_2
+  - TileSprite_Fruit_14
+  - TileSprite_Fruit_17
+  - TileSprite_Fruit_18
+  - TileSprite_Fruit_3
+  m_RenderDataMap: {}
+  m_Tag: Tile_Sprite_Atlas
+  m_IsVariant: 0

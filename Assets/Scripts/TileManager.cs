@@ -10,7 +10,7 @@ public class TileManager : MonoBehaviour
     public List<Transform> tileParent;
     public List<Sprite> tileSpritesList;
     [SerializeField] GameObject _tilePrefab;
-
+    [SerializeField] Transform _selectedTilesParent;
     void CreateTile(Transform parent)
     {
         GameObject _tileInstance = Instantiate(_tilePrefab, parent);
@@ -28,6 +28,7 @@ public class TileManager : MonoBehaviour
             }
         }
     }
+
 }
 
 

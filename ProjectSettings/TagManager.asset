@@ -41,6 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: GameItems
+    uniqueID: 2370651473
+    locked: 0
   - name: UI
     uniqueID: 611401943
+    locked: 0
+  - name: Transitions
+    uniqueID: 4269599085
     locked: 0

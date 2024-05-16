@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UI_Sprite_Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: iPhone
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 50
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 50
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 2a0756ed09552a64fbc73259b16287d2, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: dde72660dddbc7b49a35b691dc69f5c0, type: 3}
+  - {fileID: 21300000, guid: d809f760424701d40992b5ef291b454f, type: 3}
+  - {fileID: 21300000, guid: 744d9e91dca54d746a68630bc2196fe1, type: 3}
+  - {fileID: 21300000, guid: 87e392a14bc513848b26ed977897bac8, type: 3}
+  - {fileID: 21300000, guid: 98b0e912f59ba7f4884d7010eaf2b6ea, type: 3}
+  - {fileID: 21300000, guid: 923d26e3fcebc104b9c51c3daabfc98b, type: 3}
+  - {fileID: 21300000, guid: 508279944b849dd42a286bb504e66d6d, type: 3}
+  - {fileID: 21300000, guid: 21ced3b5f4d738244841ba6920185b29, type: 3}
+  - {fileID: 21300000, guid: 4eb545080b233214abc88aee2d0ace58, type: 3}
+  - {fileID: 21300000, guid: 29369958b48cfdb42b8c9b853db8d068, type: 3}
+  - {fileID: 21300000, guid: 4fadba89a04411c44aac72450dff767f, type: 3}
+  - {fileID: 21300000, guid: 473611c90f79abb4ea7ae06d4894e345, type: 3}
+  - {fileID: 21300000, guid: 9feb3fca57a05234e8c0909f759b945c, type: 3}
+  - {fileID: 21300000, guid: 9667602c761cd8b47b42280b3f553a2c, type: 3}
+  - {fileID: 21300000, guid: 2a84583c133232d44a30cbf97e82a45b, type: 3}
+  - {fileID: 21300000, guid: b02e94bcf50dd984c99a83af9dd72bcd, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - UI_Jokers_Btn
+  - UI_Currency_BG
+  - UI_Progress_Bar_BG
+  - UI_TileBar
+  - UI_Settings_Btn_1
+  - UI_Settings_Btn_0
+  - UI_Nav_bar
+  - UI_Player_tokens
+  - UI_Progress_Bar
+  - UI_Player_Info
+  - UI_Difficulty_Mdl
+  - UI_Casual_Btn
+  - UI_Star
+  - UI_NavBtns
+  - UI_Currency
+  - UI_Tile_BG
+  m_RenderDataMap: {}
+  m_Tag: UI_Sprite_Atlas
+  m_IsVariant: 0
