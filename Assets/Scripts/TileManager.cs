@@ -26,7 +26,7 @@ public class TileManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    void SetTiles()
+    public void SetTiles()
     {
         foreach (Transform tileParent in tileParent)
         {

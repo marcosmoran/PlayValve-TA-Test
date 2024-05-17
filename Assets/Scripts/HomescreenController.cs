@@ -6,6 +6,7 @@ using UnityEngine;
 public class HomescreenController : Screen
 {
     [SerializeField] GameObject _VFX;
+    public bool currentlyAnimating => base._currentlyAnimating;
     void Start()
     {
         base.Start();

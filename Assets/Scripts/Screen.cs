@@ -5,6 +5,7 @@ using DG.Tweening;
 public class Screen : MonoBehaviour
 {
     [SerializeField] CanvasGroup _canvasGroup;
+    protected bool _currentlyAnimating = false;
     protected void Start()
     {
         _canvasGroup.alpha = 0;
@@ -26,6 +27,9 @@ public class Screen : MonoBehaviour
     {
         var fadeVal = _fadeIn ? 1 : 0;
         var dur = _fadeIn ? .5f : .2f;
-        _canvasGroup.DOFade(fadeVal, dur);
+        _currentlyAnimating = true;
+        _canvasGroup.DOFade(fadeVal, dur).OnComplete(() => 
+            _currentlyAnimating = false
+            );
     }
 }
