@@ -23,7 +23,7 @@ public class GameTile : MonoBehaviour
     void OnSpawn()
     {
         _tileBG.raycastTarget = true;
-        PlayAnim();
+        PlaySpawnAnim();
     }
     public void OnTileClick()
     {
@@ -35,7 +35,7 @@ public class GameTile : MonoBehaviour
         _tileImage.sprite = img;
     }
 
-    void PlayAnim()
+    public void PlaySpawnAnim()
     {
         _animator.SetTrigger("OnSpawn");
     }

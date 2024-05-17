@@ -52,11 +52,7 @@ public class TileManager : MonoBehaviour
     public void OnTileClicked(GameTile tile)
     {
         _selectedTiles.Add(tile);
-        PlaceSpriteInNextAvailableSpot(tile.GetComponent<RectTransform>());
-    }
-
-    public void PlaceSpriteInNextAvailableSpot(RectTransform spriteRect)
-    {
+        RectTransform spriteRect = tile.GetComponent<RectTransform>();
         if (currentSpotIndex >= totalSpots)
         {
             Debug.LogError("No more spots available.");
@@ -68,7 +64,11 @@ public class TileManager : MonoBehaviour
         float scaleRatio = widthPerSprite / spriteRect.rect.width;
         spriteRect.anchoredPosition = new Vector2(widthPerSprite * currentSpotIndex + widthPerSprite / 2, 0);
         currentSpotIndex++;
+
+        tile.PlaySpawnAnim();
     }
+
+ 
 }
 
 
