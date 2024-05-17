@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void TransitionScreens()
+   public void TransitionScreens()
     {
         _homescreen.OnHomescreenExit();
         _gamescreen.OnGamescreenEnter();

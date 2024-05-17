@@ -4,14 +4,19 @@ using UnityEngine;
 using UnityEditor;
 using System.IO;
 using System;
+using UnityEngine.UI;
 public class TileManager : MonoBehaviour
 {
     public int tileCount;
     public List<Transform> tileParent;
     public List<Sprite> tileSpritesList;
+    [SerializeField] RectTransform _selectedTileArea;
     [SerializeField] GameObject _tilePrefab;
     [SerializeField] Transform _selectedTilesParent;
-
+    List<GameTile> _selectedTiles = new List<GameTile>();
+    
+    private int totalSpots = 5; 
+    private int currentSpotIndex = 0;
     public static TileManager Instance { get; private set; }
 
     void Awake()
@@ -34,6 +39,7 @@ public class TileManager : MonoBehaviour
             {
                 CreateTile(tileParent);
             }
+            
         }
     }
     void CreateTile(Transform parent)
@@ -45,7 +51,23 @@ public class TileManager : MonoBehaviour
 
     public void OnTileClicked(GameTile tile)
     {
-        tile.transform.parent = _selectedTilesParent;
+        _selectedTiles.Add(tile);
+        PlaceSpriteInNextAvailableSpot(tile.GetComponent<RectTransform>());
+    }
+
+    public void PlaceSpriteInNextAvailableSpot(RectTransform spriteRect)
+    {
+        if (currentSpotIndex >= totalSpots)
+        {
+            Debug.LogError("No more spots available.");
+            return;
+        }
+
+        spriteRect.SetParent(_selectedTileArea);
+        float widthPerSprite = _selectedTileArea.rect.width / totalSpots;
+        float scaleRatio = widthPerSprite / spriteRect.rect.width;
+        spriteRect.anchoredPosition = new Vector2(widthPerSprite * currentSpotIndex + widthPerSprite / 2, 0);
+        currentSpotIndex++;
     }
 }
 

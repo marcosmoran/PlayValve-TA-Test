@@ -9,6 +9,8 @@ public class Screen : MonoBehaviour
     protected void Start()
     {
         _canvasGroup.alpha = 0;
+        _canvasGroup.blocksRaycasts = false;
+        _canvasGroup.interactable = false;
     }
     protected void OnScreenEnter()
     {
