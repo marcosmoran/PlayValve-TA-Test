@@ -73,12 +73,14 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 9168f727aabff1f41aef550697e57876, type: 3}
   - {fileID: 21300000, guid: 4eb545080b233214abc88aee2d0ace58, type: 3}
   - {fileID: 21300000, guid: 29369958b48cfdb42b8c9b853db8d068, type: 3}
+  - {fileID: 21300000, guid: c0573c6892d04384890b60e2f99b0688, type: 3}
   - {fileID: 21300000, guid: 4fadba89a04411c44aac72450dff767f, type: 3}
   - {fileID: 21300000, guid: 473611c90f79abb4ea7ae06d4894e345, type: 3}
   - {fileID: 21300000, guid: 9feb3fca57a05234e8c0909f759b945c, type: 3}
   - {fileID: 21300000, guid: 9667602c761cd8b47b42280b3f553a2c, type: 3}
   - {fileID: 21300000, guid: 2a84583c133232d44a30cbf97e82a45b, type: 3}
   - {fileID: 21300000, guid: b02e94bcf50dd984c99a83af9dd72bcd, type: 3}
+  - {fileID: 21300000, guid: 38a7c4cc3de51e54194addf536b5ac9a, type: 3}
   - {fileID: 21300000, guid: 29e3886fe15f9d646b86025c7e6d31a1, type: 3}
   m_PackedSpriteNamesToIndex:
   - UI_Jokers_Btn
@@ -92,12 +94,14 @@ SpriteAtlas:
   - UI_Transition_Text
   - UI_Progress_Bar
   - UI_Player_Info
+  - UI_Button_Next
   - UI_Difficulty_Mdl
   - UI_Casual_Btn
   - UI_Star
   - UI_NavBtns
   - UI_Currency
   - UI_Tile_BG
+  - UI_Victory
   - VFX_Flare
   m_RenderDataMap: {}
   m_Tag: UI_Sprite_Atlas
