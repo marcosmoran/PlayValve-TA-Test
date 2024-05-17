@@ -5929,7 +5929,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46ee0b93a33f5b942962c2215d01dce7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _transitionController: {fileID: 0}
+  _transitionController: {fileID: 655219709}
 --- !u!225 &750799085
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -5938,7 +5938,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 750799080}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -6179,6 +6179,21 @@ MonoBehaviour:
   _selectedTileArea: {fileID: 1829777642}
   _tilePrefab: {fileID: 8638225063188882540, guid: 7f91b6f35d2c2744d8206d183fed3239, type: 3}
   _selectedTilesParent: {fileID: 1829777642}
+  onTileMatchEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1805561416}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: OnTileMatched
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &828352754
 GameObject:
   m_ObjectHideFlags: 0
@@ -6281,7 +6296,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 1
+  m_FillAmount: 0
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -6306,7 +6321,7 @@ GameObject:
   - component: {fileID: 914335386}
   - component: {fileID: 914335385}
   m_Layer: 0
-  m_Name: Star
+  m_Name: Star_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6345,7 +6360,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6901961, g: 0.6784314, b: 0.6784314, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6381,6 +6396,7 @@ GameObject:
   - component: {fileID: 918706969}
   - component: {fileID: 918706971}
   - component: {fileID: 918706970}
+  - component: {fileID: 918706972}
   m_Layer: 0
   m_Name: ProgressBarBG
   m_TagString: Untagged
@@ -6448,6 +6464,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 918706968}
   m_CullTransparentMesh: 1
+--- !u!95 &918706972
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918706968}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a7d66c3098ff83948a7566bf7bb2b43e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &930493854
 GameObject:
   m_ObjectHideFlags: 0
@@ -6641,7 +6677,7 @@ GameObject:
   - component: {fileID: 1009006833}
   - component: {fileID: 1009006832}
   m_Layer: 0
-  m_Name: Star
+  m_Name: Star_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6680,7 +6716,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6886792, g: 0.67958343, b: 0.67958343, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -8209,7 +8245,7 @@ GameObject:
   - component: {fileID: 1570500500}
   - component: {fileID: 1570500499}
   m_Layer: 0
-  m_Name: Star
+  m_Name: Star_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8248,7 +8284,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6901961, g: 0.6784314, b: 0.6784314, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -13921,6 +13957,7 @@ MonoBehaviour:
   _transition: {fileID: 655219709}
   _gamescreen: {fileID: 1245551505}
   _coinAmountText: {fileID: 2115020617}
+  _progressBarAnimator: {fileID: 918706972}
 --- !u!1 &1812775787
 GameObject:
   m_ObjectHideFlags: 0

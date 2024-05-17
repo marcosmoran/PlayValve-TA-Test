@@ -5,6 +5,7 @@ using UnityEditor;
 using System.IO;
 using System;
 using UnityEngine.UI;
+using UnityEngine.Events;
 public class TileManager : MonoBehaviour
 {
     public int tileCount;
@@ -19,6 +20,8 @@ public class TileManager : MonoBehaviour
     private int currentSpotIndex = 0;
     private int matchCount = 0;
     int matchLimit = 3;
+
+    public UnityEvent onTileMatchEvent;
     public static TileManager Instance { get; private set; }
 
     void Awake()
@@ -77,6 +80,7 @@ public class TileManager : MonoBehaviour
         }
         currentSpotIndex = 0;
         matchCount = 0;
+        onTileMatchEvent.Invoke();
     } 
 }
 

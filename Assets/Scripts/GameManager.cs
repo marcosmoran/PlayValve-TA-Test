@@ -10,7 +10,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] GamescreenController _gamescreen;
     [SerializeField] TextMeshProUGUI _coinAmountText;
 
+    [SerializeField] Animator _progressBarAnimator;
     int _coinAmount = 0;
+    int tileMatchCounter = 0;
     void Start()
     {
         _coinAmountText.text = "0";
@@ -40,6 +42,15 @@ public class GameManager : MonoBehaviour
         }
         _gamescreen.OnGamescreenEnter();
     }
+
+    public void OnTileMatched()
+    {
+        if (tileMatchCounter > 2) return;
+        GainCoins(20);
+        _progressBarAnimator.SetTrigger("Progress_" + tileMatchCounter.ToString());
+        tileMatchCounter++;
+        if (tileMatchCounter >= 2) GameWon(); 
+    }
     public void GainCoins(int amountGained)
     {
         var oldCoinAmount = _coinAmount;
@@ -60,5 +71,9 @@ public class GameManager : MonoBehaviour
         }
         _coinAmountText.transform.localScale = new Vector3(1, 1, 0);
         _coinAmountText.color = Color.white;
+    }
+    public void GameWon()
+    {
+
     }
 }
