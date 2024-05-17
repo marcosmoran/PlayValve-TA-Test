@@ -39,4 +39,8 @@ public class GameTile : MonoBehaviour
     {
         _animator.SetTrigger("OnSpawn");
     }
+    public void PlayMatchAnim() 
+    {
+        _animator.SetTrigger("OnMatch");
+    }
 }

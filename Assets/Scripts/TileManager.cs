@@ -17,6 +17,8 @@ public class TileManager : MonoBehaviour
     
     private int totalSpots = 5; 
     private int currentSpotIndex = 0;
+    private int matchCount = 0;
+    int matchLimit = 3;
     public static TileManager Instance { get; private set; }
 
     void Awake()
@@ -53,19 +55,22 @@ public class TileManager : MonoBehaviour
     {
         _selectedTiles.Add(tile);
         RectTransform spriteRect = tile.GetComponent<RectTransform>();
-        if (currentSpotIndex >= totalSpots)
-        {
-            Debug.LogError("No more spots available.");
-            return;
-        }
-
+        
         spriteRect.SetParent(_selectedTileArea);
         float widthPerSprite = _selectedTileArea.rect.width / totalSpots;
-        float scaleRatio = widthPerSprite / spriteRect.rect.width;
         spriteRect.anchoredPosition = new Vector2(widthPerSprite * currentSpotIndex + widthPerSprite / 2, 0);
         currentSpotIndex++;
-
+        matchCount++;
         tile.PlaySpawnAnim();
+        if (matchCount == matchLimit)
+        {
+            foreach(GameTile selectedTile in _selectedTiles)
+            {
+                selectedTile.PlayMatchAnim();
+            }
+            currentSpotIndex = 0;
+            matchCount = 0;
+        }
     }
 
  

@@ -78,6 +78,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 9667602c761cd8b47b42280b3f553a2c, type: 3}
   - {fileID: 21300000, guid: 2a84583c133232d44a30cbf97e82a45b, type: 3}
   - {fileID: 21300000, guid: b02e94bcf50dd984c99a83af9dd72bcd, type: 3}
+  - {fileID: 21300000, guid: 29e3886fe15f9d646b86025c7e6d31a1, type: 3}
   m_PackedSpriteNamesToIndex:
   - UI_Jokers_Btn
   - UI_Currency_BG
@@ -95,6 +96,7 @@ SpriteAtlas:
   - UI_NavBtns
   - UI_Currency
   - UI_Tile_BG
+  - VFX_Flare
   m_RenderDataMap: {}
   m_Tag: UI_Sprite_Atlas
   m_IsVariant: 0
