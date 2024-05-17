@@ -106,7 +106,7 @@ Material:
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _Metallic: 0
-    - _NoiseIntensity: 0.05
+    - _NoiseIntensity: 0.1
     - _NoiseScale: 5
     - _OcclusionStrength: 1
     - _Parallax: 0.005
