@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour
     }
     IEnumerator TransitionCoroutine()
     {
-        while(_transition.transitionFinished)
+        while(!_transition.transitionFinished)
         {
             yield return null;
         }
