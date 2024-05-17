@@ -70,6 +70,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 923d26e3fcebc104b9c51c3daabfc98b, type: 3}
   - {fileID: 21300000, guid: 508279944b849dd42a286bb504e66d6d, type: 3}
   - {fileID: 21300000, guid: 21ced3b5f4d738244841ba6920185b29, type: 3}
+  - {fileID: 21300000, guid: 9168f727aabff1f41aef550697e57876, type: 3}
   - {fileID: 21300000, guid: 4eb545080b233214abc88aee2d0ace58, type: 3}
   - {fileID: 21300000, guid: 29369958b48cfdb42b8c9b853db8d068, type: 3}
   - {fileID: 21300000, guid: 4fadba89a04411c44aac72450dff767f, type: 3}
@@ -88,6 +89,7 @@ SpriteAtlas:
   - UI_Settings_Btn_0
   - UI_Nav_bar
   - UI_Player_tokens
+  - UI_Transition_Text
   - UI_Progress_Bar
   - UI_Player_Info
   - UI_Difficulty_Mdl

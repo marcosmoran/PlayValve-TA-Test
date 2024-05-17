@@ -2,17 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TransitionController : MonoBehaviour
+public class TransitionController : Screen
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] Animator _animator;
+    public bool transitionFinished = false;
+
+    public void Start()
     {
-        
+        base.Start();
+    }
+    public void OnTransitionEnter()
+    {
+        base.OnScreenEnter();
+        _animator.SetTrigger("OnTransition");
     }
 
-    // Update is called once per frame
-    void Update()
+
+    public void OnTransitionFinished()
     {
-        
+        transitionFinished = true;
+        base.OnScreenExit();
     }
 }

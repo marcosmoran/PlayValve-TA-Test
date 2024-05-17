@@ -29,6 +29,15 @@ public class GameManager : MonoBehaviour
    public void TransitionScreens()
     {
         _homescreen.OnHomescreenExit();
+        _transition.OnTransitionEnter();
+        StartCoroutine(TransitionCoroutine());
+    }
+    IEnumerator TransitionCoroutine()
+    {
+        while(_transition.transitionFinished)
+        {
+            yield return null;
+        }
         _gamescreen.OnGamescreenEnter();
     }
     public void GainCoins(int amountGained)
