@@ -64,16 +64,20 @@ public class TileManager : MonoBehaviour
         tile.PlaySpawnAnim();
         if (matchCount == matchLimit)
         {
-            foreach(GameTile selectedTile in _selectedTiles)
-            {
-                selectedTile.PlayMatchAnim();
-            }
-            currentSpotIndex = 0;
-            matchCount = 0;
+            StartCoroutine(TileCheckCouroutine()); // for demo purposes only
         }
     }
 
- 
+    IEnumerator TileCheckCouroutine()
+    {
+        yield return new WaitForSeconds(.3f);
+        foreach (GameTile selectedTile in _selectedTiles)
+        {
+            selectedTile.PlayMatchAnim();
+        }
+        currentSpotIndex = 0;
+        matchCount = 0;
+    } 
 }
 
 
